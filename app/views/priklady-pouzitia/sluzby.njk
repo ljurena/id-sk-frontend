@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
-{% set pageName = "Služby" %}
+{% set pageName = "Webové portály" %}
 
 {% block beforeContent %}
   {{ govukBreadcrumbs({
@@ -14,17 +14,106 @@
 
 {% block content %}
 
+    <span class="govuk-caption-xl">Príklady použitia ID-SK</span>
     <h1 class="govuk-heading-xl">{{pageName}}</h1>
 
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
-          
-            <h3 class="govuk-heading-m">Naspisy</h3>
-            <p class="govuk-body">
-                texty
-            </p>
 
-        </div>
-    </div>
+        <h2 class="govuk-heading-s">Obsah:</h2>
+          <ul class="govuk-list">
+            <li><a href="#automat">Automat.gov.sk</a></li>
+            <li><a href="#ehranica">E-hranica</a></li>
+  	<li><a href="#ockovanie">Registrácia na očkovanie proti koronavírusu</a></li>
+  	<li><a href="#darca-krvi">Darca krvi</a></li>
+ 	 <li><a href="#konecne-uzivatel">Konečne užívateľ</a></li>
+          </ul>
+
+            <h3 class="govuk-heading-m" id="automat">Automat.gov.s</h3>
+            <p class="govuk-body">Služba zobrazujúca prehľad opatrení proti epidémii koronavírusu v jednotlivých okresoch.</p>
+
+                <h4 class="govuk-heading-s">Odkaz</h4>
+                <a href=https://automat.gov.sk/" title="automat.gov.sk">automat.gov.sk</a>
+                
+                <h4 class="govuk-heading-s">Správca</h4>
+               <a href=https://www.mirri.gov.sk/" title="Ministerstvo investícií, regionálneho rozvoja a informatizácie SR">Ministerstvo investícií, regionálneho rozvoja a informatizácie SR</a>
+
+                <h4 class="govuk-heading-s">Dodávateľ</h4>
+                 <p>Slovensko IT. </p>
+      </div>
+      <div class="govuk-grid-column-full">
+          <img width="100%" src="" alt="Automat.gov.sk  úvodná stránka"><p></p>
+      </div>
+
+        <div class="govuk-grid-column-two-thirds">
+            <h3 class="govuk-heading-m" id="#ehranica">E-hranica</h3>
+            <p class="govuk-body">Služba umožňujúca registráciu pri príchode zo zahraničia počas núdzového stavu.</p>
+
+                <h4 class="govuk-heading-s">Odkaz</h4>
+                <a href=”https://korona.gov.sk/ehranica/" title="korona.gov.sk/ehranica"/>korona.gov.sk/ehranica/</a>
+                
+                <h4 class="govuk-heading-s">Správca</h4>
+                <a href="https://www.mirri.gov.sk/" title="Ministerstvo investícií, regionálneho rozvoja a informatizácie SR">Ministerstvo investícií, regionálneho rozvoja a informatizácie SR</a>, <a href=”http://www.nczisk.sk/Pages/default.aspx" title="NCZI">NCZI</a>            
+	    <h4 class="govuk-heading-s">Dodávateľ</h4>
+	    <p>dobrovoľník (bratia.sk)</p>
+         </div>
+         <div class="govuk-grid-column-full">
+          <img width="100%" src="" alt="ehranica úvodná stránka"><p></p>
+        </div> 
+        
+<div class="govuk-grid-column-two-thirds">
+            <h3 class="govuk-heading-m" id="#ockovanie">Registrácia na očkovanie proti COVID-19</h3>
+            <p class="govuk-body">Služba pre registráciu na očkovanie proti koronavírusu, vrátane tzv. "čakárne". </p>
+
+                <h4 class="govuk-heading-s">Odkaz</h4>
+                <a href=”https://vakcinacia.nczisk.sk/" title="vakcinacia.nczisk.sk">vakcinacia.nczisk.sk</a>
+                
+                <h4 class="govuk-heading-s">Správca</h4>
+                <a href="http://www.nczisk.sk/Pages/default.aspx" class="govuk-link" title="Národné centrum zdravotníckych informácií (NCZI)">Národné centrum zdravotníckych informácií (NCZI).</a>
+            
+	    <h4 class="govuk-heading-s">Dodávateľ</h4>
+	    <p>NCZI</p>
+         </div>
+         <div class="govuk-grid-column-full">
+          <img width="100%" src="" alt="Registrácia na očkovanie úvodná stránka"><p></p>
+        </div> 
+
+<div class="govuk-grid-column-two-thirds">
+            <h3 class="govuk-heading-m" id="#darca-krvi">Darca krvi</h3>
+            <p class="govuk-body">Táto stránka Vás prevedie 5-krokovým formulárom, na konci ktorého si stiahnete predvyplnený dotazník pre darcov krvi, plazmy a krvných buniek v PDF formáte.</p>
+
+                <h4 class="govuk-heading-s">Odkaz</h4>
+              <a href="https://darcakrvi.sk/" title="darcakrvi.sk">darcakrvi.sk</a>
+                
+                <h4 class="govuk-heading-s">Správca</h4>
+                <p>Aston ITM</p>
+            
+	    <h4 class="govuk-heading-s">Dodávateľ</h4>
+	    <p>Aston ITM</p>
+         </div>
+         <div class="govuk-grid-column-full">
+          <img width="100%" src="" alt="Darca krvi  úvodná stránka"><p></p>
+        </div> 
+
+<div class="govuk-grid-column-two-thirds">
+            <h3 class="govuk-heading-m" id="#konecne-uzivatel">Konečne používateľ</h3>
+            <p class="govuk-body">Modelová služba, ako si dodávateľ predstavuje implementáciu ID-SK pre službu zápisu konečného užívateľa do obchodného registra.</p>
+
+                <h4 class="govuk-heading-s">Odkaz</h4>
+                <a href="https://konecneuzivatel.sk/" title="konecnepouzivatel.sk">konecneuzivatel.sk</a>
+                
+                <h4 class="govuk-heading-s">Správca</h4>
+                <p>JUMPsoft</p>
+            
+	    <h4 class="govuk-heading-s">Dodávateľ</h4>
+	    <p>JUMPsoft</p>
+         </div>
+         <div class="govuk-grid-column-full">
+          <img width="100%" src="" alt="Konečne užívateľ úvodná stránka"><p></p>
+        </div> 
+
+   </div>
+
+   
 
 {% endblock %}
